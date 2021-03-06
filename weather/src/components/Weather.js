@@ -3,10 +3,6 @@ import { connect } from "react-redux";
 import { fetchWeather } from "../redux/actions";
 import "./weather.css";
 
-// const mapDispatchToProps = {
-//     fetchWeather: () => (fetchWeather)
-// }; 
-
 const mapStateToProps = state => {
     return {
         weather: state.weather.main,
@@ -76,28 +72,11 @@ const Weather = ({weather, description, temp, feels_like, temp_min, temp_max, pr
     )
 }
 
-// const mapStateToProps = state => {
-//     return {
-//         zip: state.zip
-//     }
-// }
 const mapDispatchToProps = {
     fetchWeather
 } 
-
-// const mapDispatchToProps = (dispatch) => {
-//     return {
-//         fetchWeather: () => dispatch(fetchWeather)
-//     }
-// }
 
 export default connect(
     mapStateToProps,
     mapDispatchToProps
 )(Weather);
-
-// export default connect(
-//     mapStateToProps
-// )(Weather);
-
-//export default Weather;
