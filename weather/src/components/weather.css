@@ -1,0 +1,45 @@
+.weather {
+    background-color: rgb(230, 255, 255);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.weather-h1 {
+    margin: 0px;
+}
+
+.weather-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.weather-form input {
+    padding: 8px;
+    width: 300px;
+    border-radius: 10px;
+    border: 1px solid;
+    margin: 10px auto;
+}
+
+.weather-form button {
+    padding: 9px;
+    width: 200px;
+    margin: auto;
+    border-radius: 10px;
+    border: none;
+    background-color:rgb(2, 167, 255);
+    color: white;
+    font-size: 1em;
+    margin-top: 5px;
+}
+
+.weather-form button:hover {
+    background-color:black;
+}
+
+.weather-result {
+    display: grid;
+    grid-template-columns: 120px 120px;
+    align-items: center;
+    justify-content: center;
+}
